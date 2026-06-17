@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: gold_cours_apple
+    columns:
+      - name: date
+        tests:
+          - not_null
+          - unique
+      - name: close
+        tests:
+          - not_null
+      - name: ma_7j
+        tests:
+          - not_null

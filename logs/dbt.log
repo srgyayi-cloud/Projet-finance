@@ -1,0 +1,30 @@
+[0m10:15:18.527665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3F278EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB3DD939D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB418C3D90>]}
+
+
+============================== 10:15:18.543153 | 186436df-a3ef-4a58-9c03-b6c0caf035e4 ==============================
+[0m10:15:18.543153 [info ] [MainThread]: Running with dbt=1.8.2
+[0m10:15:18.545352 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\hp\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init financial_dashboard', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:15:18.591805 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/hp/.dbt')}
+[0m10:15:18.592497 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m10:15:18.595059 [debug] [MainThread]: Starter project path: C:\Users\hp\projet-finance\env\Lib\site-packages\dbt\include\starter_project
+[0m10:15:18.616537 [info ] [MainThread]: 
+Your new dbt project "financial_dashboard" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:15:18.617287 [info ] [MainThread]: Setting up your profile.
+[0m10:24:33.649022 [info ] [MainThread]: Profile financial_dashboard written to C:\Users\hp\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:24:33.651988 [debug] [MainThread]: Command `dbt init` succeeded at 10:24:33.651626 after 555.38 seconds
+[0m10:24:33.652942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB42070050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB41D97AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EB419C7BD0>]}
+[0m10:24:33.653926 [debug] [MainThread]: Flushing usage events

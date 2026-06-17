@@ -1,0 +1,14 @@
+# dbt
+profiles.yml
+.dbt/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Data
+*.csv
+
+# Env
+.env
