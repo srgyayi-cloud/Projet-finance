@@ -21,7 +21,7 @@ collecte automatisée → stockage PostgreSQL → transformation dbt → visuali
 ## Architecture des données
 
 ```
-cours_apple (raw)
+cours_apple (bronze)
     └── silver_cours_apple    variation absolue, variation %
             └── gold_cours_apple    MA 7j, MA 30j, volume moyen, volatilité
 ```
@@ -30,8 +30,8 @@ cours_apple (raw)
 
 ### Prérequis
 
-- Python 3.10+
-- PostgreSQL 15+
+- Python 3.13.14
+- PostgreSQL 18
 - dbt-postgres
 - Docker (requis pour pgvector et la brique RAG)
 - Ollama ou LangChain
@@ -63,9 +63,9 @@ Créer le fichier `~/.dbt/profiles.yml` et renseigner :
 ```
 host: 127.0.0.1
 port: 5432
-database: <nom_de_ta_base>
-user: <ton_user>
-password: <ton_mot_de_passe>
+database: <nom_de_la_base>
+user: <user>
+password: <mot_de_passe>
 ```
 
 ### 5. Collecter les données
