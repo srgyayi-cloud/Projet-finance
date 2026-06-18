@@ -23,7 +23,7 @@ collecte automatisée → stockage PostgreSQL → transformation dbt → visuali
 ```
 cours_apple (bronze)
     └── silver_cours_apple    variation absolue, variation %
-            └── gold_cours_apple    MA 7j, MA 30j, volume moyen, volatilité
+            └── gold_cours_apple    Moyenne du prix de clôture 7j (MA_7j), MA 30j, volume moyen, volatilité
 ```
 
 ## Installation
