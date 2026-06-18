@@ -1,4 +1,4 @@
-import yfinance as yf 
+import yfinance as yf  # type: ignore
 
 data = yf.download("AAPL", period="1mo")
 print(data)
@@ -20,9 +20,14 @@ print ("Prix le plus bas :", data["Low"].min())
 # Sauvegarde des données sous format CSV
 data.to_csv("AAPL_data.csv", index=False)
 
-import psycopg2 
+# Connexion à la base de données PostgreSQL et insertion des données
+import psycopg2  # type: ignore
+import os
+from dotenv import load_dotenv 
 
-conn = psycopg2.connect(  host="localhost",  port=5432,  database="postgres",  user="postgres",  password="kurbyPostgres244") 
+load_dotenv()
+
+conn = psycopg2.connect(host=os.getenv("DB_HOST"),  port=os.getenv("DB_PORT"),  database=os.getenv("DB_NAME"),  user=os.getenv("DB_USER"),  password=os.getenv("DB_PASSWORD"))
 
 cursor = conn.cursor() 
 
